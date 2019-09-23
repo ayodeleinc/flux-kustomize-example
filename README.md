@@ -1,4 +1,5 @@
 # Using Flux with Kustomize
+
 ## Scenario and Goals
 
 The following example makes use of Flux's experimental feature
