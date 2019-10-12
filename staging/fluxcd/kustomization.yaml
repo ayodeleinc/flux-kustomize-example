@@ -1,0 +1,11 @@
+namespace: flux
+resources:
+  - namespace.yaml
+bases:
+ - github.com/fluxcd/helm-operator//deploy
+secretGenerator:
+  - name: helm-repositories
+    files:
+      - repositories.yaml
+patchesStrategicMerge:
+  - patch.yaml
